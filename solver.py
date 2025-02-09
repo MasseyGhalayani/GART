@@ -1,3 +1,7 @@
+
+import numpy as np
+print("NumPy version:", np.__version__)
+
 from matplotlib import pyplot as plt
 from pytorch3d.transforms import matrix_to_axis_angle
 import imageio
