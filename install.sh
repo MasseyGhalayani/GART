@@ -6,6 +6,10 @@ source activate gart
 which python
 which pip
 
+
+module load cuda/11.8
+export TORCH_CUDA_ARCH_LIST="7.0;7.5;8.0"
+
 conda install pytorch==2.0.0 torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
 
 # FORCE_CUDA=1 pip install "git+https://github.com/facebookresearch/pytorch3d.git" #
