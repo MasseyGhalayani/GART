@@ -184,12 +184,12 @@ CMJ_VISIBILITY_IN_KEY_VIDS = [
 
 # define which bone lengths are used as input to the 2d-to-3d network
 IDXS_BONES_NO_REDUNDANCY = [6,7,8,9,16,17,18,19,32,1,2,3,4,5,14,15,24,25,26,27,28,29,30,31]
-# load bone lengths of the mean dog (already filtered)
-mean_dog_bone_lengths = []
-with open(mean_dog_bone_lengths_txt, 'r') as f:
-    for line in f:
-       mean_dog_bone_lengths.append(float(line.split('\n')[0]))
-MEAN_DOG_BONE_LENGTHS_NO_RED = np.asarray(mean_dog_bone_lengths)[IDXS_BONES_NO_REDUNDANCY]        # (24, )
+# # load bone lengths of the mean dog (already filtered)
+# mean_dog_bone_lengths = []
+# with open(mean_dog_bone_lengths_txt, 'r') as f:
+#     for line in f:
+#        mean_dog_bone_lengths.append(float(line.split('\n')[0]))
+# MEAN_DOG_BONE_LENGTHS_NO_RED = np.asarray(mean_dog_bone_lengths)[IDXS_BONES_NO_REDUNDANCY]        # (24, )
 
 # Body part segmentation:
 #   the body can be segmented based on the bones and for the new dog model also based on the new shapedirs
